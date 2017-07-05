@@ -37,16 +37,6 @@ public class AdaptorImpl implements Adaptor {
 	private ExecutorService service = Executors
 	        .newFixedThreadPool(Runtime.getRuntime().availableProcessors() + 1);
 
-	public AdaptorImpl(final int port, final int connectionLimits,
-	        final int ukCall, final int enCall, final int ruCall,
-	        final int threads) {
-		this.port = port;
-		this.connectionLimits = connectionLimits;
-		this.ukCall = ukCall;
-		this.enCall = enCall;
-		this.ruCall = ruCall;
-	}
-
 	private AdaptorImpl() {
 
 	}
